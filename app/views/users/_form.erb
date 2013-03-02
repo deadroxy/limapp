@@ -1,0 +1,13 @@
+<%= form.label :username %>:
+<%= form.text_field :username %><br />
+
+<%= form.label :first_name %>:
+<%= form.text_field :first_name %><br />
+
+<%= form.label :last_name %>:
+<%= form.text_field :last_name %><br />
+
+<%= form.label :dob %>:
+<%= form.date_select(:dob, :start_year => 1900, :end_year => 2013) %><br />
+
+<%= form.submit %>

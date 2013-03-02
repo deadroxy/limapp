@@ -1,0 +1,5 @@
+<%= form_for @user do |form| %>
+  <%= render(:partial => 'form', :locals => { :form => form }) %>
+<% end %>
+<br/>
+<%= link_to("cancel", user_path(@user)) %>
