@@ -5,3 +5,5 @@ gem 'bundler'
 gem 'rails'
 
 gem 'mysql'
+
+gem 'nokogiri'
