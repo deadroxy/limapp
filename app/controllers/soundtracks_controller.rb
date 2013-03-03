@@ -1,8 +1,9 @@
 class SoundtracksController < ApplicationController
   
   def new
-     @soundtrack = Soundtrack.new
-     @soundtrack.build_user 
+    @user = User.find(params[:user_id])
+    @soundtrack = Soundtrack.new
+    @soundtrack.build_user
    end
 
    def create
