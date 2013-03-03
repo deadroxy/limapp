@@ -7,3 +7,4 @@ gem 'rails'
 gem 'mysql'
 
 gem 'nokogiri'
+gem 'geekier_factory'

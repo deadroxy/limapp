@@ -32,6 +32,16 @@ GEM
     builder (2.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    faraday (0.8.6)
+      multipart-post (~> 1.1)
+    faraday_body_logger (0.0.1)
+      faraday
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
+    geekier_factory (0.1.3)
+      faraday
+      faraday_body_logger
+      faraday_middleware
     i18n (0.5.0)
     json (1.7.7)
     mail (2.2.19)
@@ -40,6 +50,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.21)
+    multipart-post (1.2.0)
     mysql (2.9.1)
     nokogiri (1.5.6)
     polyglot (0.3.3)
@@ -76,6 +87,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
+  geekier_factory
   mysql
   nokogiri
   rails
